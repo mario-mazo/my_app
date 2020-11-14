@@ -23,4 +23,8 @@ defmodule MyApp.User do
     update :default
     destroy :default
   end
+
+  relationships do
+    has_many :tweets, MyApp.Tweet, destination_field: :user_id
+  end
 end

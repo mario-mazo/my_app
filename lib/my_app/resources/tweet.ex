@@ -34,4 +34,8 @@ defmodule MyApp.Tweet do
     update :default
     destroy :default
   end
+
+  relationships do
+    belongs_to :user, MyApp.User
+  end
 end
