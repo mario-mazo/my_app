@@ -2,10 +2,6 @@
 defmodule MyApp.User do
   use Ash.Resource, data_layer: Ash.DataLayer.Ets
 
-  ets do
-    private? true
-  end
-
   attributes do
     attribute :email, :string,
       allow_nil?: false,

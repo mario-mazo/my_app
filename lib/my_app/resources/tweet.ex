@@ -2,10 +2,6 @@
 defmodule MyApp.Tweet do
   use Ash.Resource, data_layer: Ash.DataLayer.Ets
 
-  ets do
-    private? true
-  end
-
   attributes do
     uuid_primary_key :id
 
